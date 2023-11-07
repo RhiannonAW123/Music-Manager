@@ -1,0 +1,80 @@
+{
+    "music": [
+      {
+        "id": 1,
+        "artist": "David Bowie",
+        "song": "Ashes to Ashes"
+      },
+      {
+        "id": 2,
+        "artist": "Benni Benassi",
+        "song": "Rocket in the Sky"
+      },
+      {
+        "id": 3,
+        "artist": "New Order",
+        "song": "Blue Monday"
+      },
+      {
+        "id": 4,
+        "artist": "Talking Heads",
+        "song": "Psycho Killer"
+      },
+      {
+        "id": 5 ,
+        "artist": "The Doors",
+        "song": "Riders on the Storm"
+      }
+    ],
+
+    "songs" : [
+      {
+        "id": 1,
+        "song":"Blue Monday",
+        "year": 1978
+      },
+      {
+        "id": 2,
+        "song":"Ashes to Ashes",
+        "year": 1994
+      },
+      {
+        "id": 3,
+        "song":"Psycho Killer",
+        "year": 1991
+      },
+      {
+        "id": 4,
+        "song":"Riders on the Storm",
+        "year": 1987
+      },
+      {
+        "id": 5,
+        "song":"Rocket in the Sky" ,
+        "year": 1915
+      }
+    ],
+
+    "artists": [
+      {
+        "id": 1,
+        "artist":"New Order"
+      },
+      {
+        "id": 2,
+        "artist":"David Bowie"
+      },
+      {
+        "id": 3,
+        "artist":"Talking Heads"
+      },
+      {
+        "id": 4,
+        "artist":"The Doors"
+      },
+      {
+        "id": 5,
+        "artist":"Benni Benassi"
+      }
+    ]
+}
