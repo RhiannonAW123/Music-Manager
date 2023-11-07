@@ -1,9 +1,9 @@
 import { useState, useEffect} from 'react';
+import SongComponent from '../components/SongComponent';
 
-export default function Song() {
+export default function SongsContainer() {
 
-    // const [name, setName] = useState('mario');
-    const [song, setSong] = useState(null);
+    const [songs, setSongs] = useState(null);
 
     useEffect(() => {
         fetch('http://localhost:3031/songs')
@@ -12,16 +12,14 @@ export default function Song() {
         })
         .then((data) => {
             console.log(data);
-            setSong(data)
+            setSongs(data)
         })
     }, []);
 
     return (
     <div>
         <h1>Songs</h1>
-        {JSON.stringify(song)}
+        {songs?.map( song => <SongComponent key={song.id} title={song.title} year={song.year} id={song.id}/>)}
     </div> 
-    
-    
     )
 }

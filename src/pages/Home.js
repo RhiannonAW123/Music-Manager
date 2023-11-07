@@ -23,7 +23,7 @@ export default function Home() {
     <div>
         <h1>Home</h1>
         {JSON.stringify(music)}
-        <SongComponent id={1} title={'Casio'} year={2017} />
+
     </div> 
     
     
