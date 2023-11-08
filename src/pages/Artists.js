@@ -1,9 +1,10 @@
 import { useState, useEffect} from 'react';
+import ArtistComponent from '../components/ArtistComponent';
 
 export default function Artist() {
 
     // const [name, setName] = useState('mario');
-    const [artist, setArtist] = useState(null);
+    const [artists, setArtists] = useState(null);
 
     useEffect(() => {
         fetch('http://localhost:3031/artists')
@@ -12,14 +13,14 @@ export default function Artist() {
         })
         .then((data) => {
             console.log(data);
-            setArtist(data)
+            setArtists(data)
         })
     }, []);
 
     return (
     <div>
         <h1>Artists</h1>
-        {JSON.stringify(artist)}
+        {artists?.map( artists => <ArtistComponent key={artists.id} artist={artists.artist} id={artists.id} />)}
     </div> 
     
     
