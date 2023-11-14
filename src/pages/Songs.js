@@ -1,5 +1,6 @@
 import { useState, useEffect} from 'react';
 import SongComponent from '../components/SongComponent';
+import MusicItemComponent from '../components/MusicItemComponent';
 
 export default function SongsContainer() {
 
@@ -19,7 +20,8 @@ export default function SongsContainer() {
     return (
     <div>
         <h1>Songs</h1>
-        {songs?.map( song => <SongComponent key={song.id} title={song.title} year={song.year} id={song.id}/>)}
+        {songs?.map( banana => <MusicItemComponent  key={banana.id} title={banana.title} year={banana.year} id={banana.id}/>)}
+   
     </div> 
     )
 }

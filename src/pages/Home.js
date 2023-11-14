@@ -1,6 +1,7 @@
 import { useState, useEffect} from 'react';
 import Song from './Songs';
 import SongComponent from '../components/SongComponent';
+import MusicItemComponent from '../components/MusicItemComponent';
 
 
 export default function Home() {
@@ -22,7 +23,7 @@ export default function Home() {
     return (
     <div>
         <h1>Home</h1>
-        {JSON.stringify(music)}
+        <MusicItemComponent invalidProp={'invalid'}/>
 
     </div> 
     
